@@ -9,6 +9,8 @@ import { FaChevronRight, FaChevronLeft } from 'react-icons/fa';
 import FoodTruckDetails from './../components/FoodTruckDetails';
 
 export default function Home() {
+  const APIKEY = "AIzaSyA_s4HLlLkg_buW0XlVtFzQLkv-Kq-Ykls";
+
   const [allFoodTrucks, setAllFoodTrucks] = useState([]);
   const [filteredFoodTrucks, setFilteredFoodTrucks] = useState([]);
   const [selectedFoodTruck, setSelectedFoodTruck] = useState(null);
@@ -171,7 +173,7 @@ export default function Home() {
 
         <article>
           <GoogleMapReact
-            bootstrapURLKeys={{ key: "AIzaSyA_s4HLlLkg_buW0XlVtFzQLkv-Kq-Ykls" }}
+            bootstrapURLKeys={{ key: APIKEY }}
             defaultCenter={{
               lat: 37.752129,
               lng: -122.440343
