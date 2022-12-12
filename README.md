@@ -28,7 +28,7 @@ Firstly, you will need to generate an API key and replace the APIKEY constant in
 
 Then run:
 ```bash
-yarn install\
+yarn install
 yarn dev
 ```
 
