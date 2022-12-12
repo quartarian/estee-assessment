@@ -86,7 +86,6 @@ export default function Home() {
 
   // Handle changes made to the search field
   const handleKeywordSearch = (event) => {
-    console.log("Updating search string", event.target.value);
     setSearchString(event.target.value);
   }
 
